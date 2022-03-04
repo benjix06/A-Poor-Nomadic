@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #C4BAFF;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    color: purple;
+    background-color: #E2C6FF;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 120px;
+    background-color: #E2C6FF;
+    border-radius: 5%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+h1 {
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+/*Login and Sign up buttons */
+ul.top-nav {
+    list-style-type: none;
+}
+
+li.nav-1 {
+    float: right;
+    font-size: 15px;
+}
+
+li.nav-1 a {
+    display: block;
+    color: #9BA9FF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s;
+    background-color: purple;
+}
+
+li.nav-1 a:hover {
+    color: #E2C6FF;
+}
+
+/*Search bar*/
+.nav-bar input[type=text] {
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: #E5E5E5;
+    margin-top: 8px;
+}
+
+.nav-bar .search-container button {
+    background: #9BA9FF;
+    border: none;
+    cursor: pointer;
+    padding: 6px 9px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+.nav-bar .search-container button:hover {
+    background: #C4C4C4;
+}
+
+/*Nav Bar*/
+ul.nav-bar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-color: #9BA9FF;
+}
+
+.hero{
+    background-image: url(../images/webpage-picture.jpg);
+    background-size: contain;
+}
+
+   
+    
+
+li.nav {
+    float: right;
+    font-size: 15px;
+}
+
+li.nav a {
+    display: block;
+    color: purple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s;
+  }
+  
+li.nav a:hover {
+    color: #9BA9FF;
+}
+
+main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4BAFF;
+} 
+
+/*News Feed */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons div {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    width: 200px;
+    background-color: #9BA9FF;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.main-container {
+    position: relative;
+    border: 2px solid black;
+    width: 80%;
+    max-width: 900px;
+    background-color:#C4C4C4;
+}
+
+.post-feed {
+    position: relative;
+    border: 2px solid black;
+    width: 80%;
+    max-width: 900px;
+    background-color:#C4C4C4;
+    border-radius: 8px;
+}
+
+.post-feed-reply {
+    position: relative;
+    border: 2px solid black;
+    width: 50%;
+    max-width: 900px;
+    background-color:#C4C4C4;
+    border-radius: 8px;  
+    float: right;
+    margin-right: 220px;  
+}
+
+.text-entry {
+    padding: 5%;
+    text-align: left;
+}
+
+.button-createpost {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #E5E5E5;
+}
+
+.button-createpost div {
+    display: block;
+    background-color: #9BA9FF;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.button-createpost a {
+    text-decoration: none;
+}
+
+.all-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.topic p{
+    background-color: #9BA9FF;
+    float: right;
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+b {
+    font-weight: normal;    
+    color: purple;
+}
+
+.third-post {
+    width: 50%;
+}
+
+.avatar-gif {
+    width: 70px;
+}
+
+.first-post {
+    width: 40%;
+}
+
+/* Leaderboard*/
+table {
+    border-collapse: collapse;
+    width: 80%;
+    background-image: url('https://media.giphy.com/media/120ErahsQyf1q8/giphy.gif');
+}
+
+.rank {
+    width: 5%;
+}
+
+.player {
+    text-align: left;
+}
+
+td, tr {
+    border: 2px solid purple;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+}
+
+th {
+    border: 2px solid purple;
+    text-align: center;
+    padding: 8px; 
+}
+
+tr:nth-child(n+2):nth-child(-n+4) {
+    background-color: #9BA9FF;   
+}
+
+tr:nth-child(n+5):nth-child(-n+11) {
+    background-color: #C4C4C4;   
+}
+
+.top-three {
+    color:purple;
+    font-weight: bold;
+}
+
+.avatar-leaderboard {
+    width: 50px;
+}
+
+.crown-leaderboard {
+    width: 30px;
+}
+
+/*Footer*/
+footer {
+    background-color: #E2C6FF;
+    text-align: center;
+    color: purple;
+    padding-top: 15px;
+    opacity: 70%;
+
+}
+
+.social-container i:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.footer-logo {
+    width: 40px;
+}
+
+/*Resources page*/
+.stories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.storiestext > div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.storiestext-amber-earl{
+    border: 2px solid purple ;
+    height: 300px;
+    background-color: #E2C6FF;
+    padding: 30px;
+    margin-right: 10px;
+}
+.storiestext-carol-ann{
+     border:2px solid purple;
+     height: 400px;
+     background-color:#E2C6FF;
+     padding: 30px;
+     margin-right: 10px;
+}
+.storiestext-Rule{
+    border: 2px solid purple;
+    background-color: #E2C6FF;
+    padding: 30px;
+    margin-right: 10px;
+}
+.storiestext-Terra{
+    border: 2px solid purple;
+    height: 400px;
+    background-color: #E2C6FF;
+    padding: 30px;
+    margin-right: 10px;
+}  
+
+.storiestext2{
+
+    border: 2px solid purple;
+    height: 50px;
+    background-color:#E2C6FF;
+    margin-right: 900px;
+    margin:auto;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+/*Dropdown nav bar for Resources*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.storiestext-how-to-help{
+    border: 2px solid purple;
+    height: 50px;
+    background-color:#E2C6FF;
+    margin-right: 900px;
+    margin: auto;
+    padding-right: 70px;
+    padding-left: 70px;  
+}
+.storiestext3{
+    border: 2px solid purple;
+    height: 50px;
+    background-color:#554468;
+    margin-right: 900px;
+    margin:auto;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.storiestext2{
+    border: 2px solid purple;
+    height: 50px;
+    background-color:#554468;
+    margin-right: 900px;
+    margin:auto;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+
+.dropdown .dropbtn {
+    font-size: 15px;  
+    border: none;
+    outline: none;
+    color:purple;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn a { 
+    transition: all 0.5s;
+    color:purple;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn a{
+    color: #9BA9FF;
+ }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#E5E5E5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content p {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #9BA9FF; 
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.stories-pointer a:hover {
+    cursor: context-menu;
+}
+
+/*Login page*/
+.login-container input[type=text], input[type=password]{
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.login-container button{
+    background-color: #9BA9FF;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+form {
+    border: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    padding: 25px;
+    background-color:#E5E5E5;
+    width: 80%;
+    max-width: 700px;
+    opacity: 90%;
+    border-radius: 5%;
+}
+
+#login-background {
+    background-image: url('../images/kids.jpg');
+    background-size: cover;
+}
+
+/*Sign Up page*/
+
+.signup-container input[type=text], input[type=password]{
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.signup-container button{
+    background-color: #9BA9FF;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+form {
+    border: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container {
+    padding: 25px;
+    background-color:#E5E5E5;
+    width: 80%;
+    max-width: 700px;
+    opacity: 90%;
+    border-radius: 5%;
+}
+
+#signup-background {
+    background-image: url("../images/Homeless-Sitting.jpg");
+    background-size: cover;
+}
+
+.page-heading {
+    border: 1px solid purple;
+    background-color: #E2C6FF;
+}
+
+/*About Us*/
+
+/*About Us Photos */
+.Aboutus-container {
+    float: left;
+    padding: 10px;
+    width: 45%; 
+    background-image: url('https://media.giphy.com/media/u1qiNXneU9M6ViYhOu/giphy.gif');
+}
+
+.Betty-photo {
+    width: 30%;
+    padding-left: 30%;
+}
+
+.Cherry-photo {
+    width: 30%;
+    padding-left: 30%;
+}
+
+.Elsabeth-photo {
+    width: 30%;
+    padding-left: 30%;
+}
+
+/*About us bio */
+
+.Betty-bio {
+    background-color: #E2C6FF;
+    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border: 1px solid purple;
+}
+
+.Cherry-bio {
+    background-color: #E2C6FF;
+    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    border: 1px solid purple;
+}
+
+.Elsabeth-bio {
+    background-color: #E2C6FF;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid purple;
+}
+
+.bio-container {
+    float: right;
+    padding-right: 5%;
+    width: 45%;
+    background-image: url('https://media.giphy.com/media/u1qiNXneU9M6ViYhOu/giphy.gif');
+}
+
+p {
+    font-size: 20px;
+}
+
+.stories-heading{
+    border: 2px solid purple;
+    background-color: #E2C6FF;
+}
+
+.parfor1{
+    border: 2px solid purple;
+
+    height: 100px;
+    padding-left: 60px;
+    margin-right: 150px;
+    margin-left: 225px;
+
+    background-color:#E2C6FF;
+    margin-bottom: 50px;
+}
+
+.amend1{
+    border: 2px solid purple;
+    height: 70px;
+    padding-left: 60px;
+    margin-right: 150px;
+    margin-left: 225px;
+    background-color:#E2C6FF;
+}
+
+
+.Each-year{
+
+    margin-bottom: 5%;
+    border: 2px solid purple;
+    background-color: #E2C6FF;
+
+}
+
+
+
+.amend-1{
+    border: 2px solid purple;
+    height: 400px;
+    background-color: #E2C6FF;
+    padding: 30px;
+    margin: 50px 250px 5px 250px;
+}
+
+.amendment29-heading-1{
+    border: 2px solid purple;
+    height: 70px;
+    padding-left: 60px;
+    margin-right: 450px;
+    margin-left: 450px;
+    background-color:#E2C6FF;
+}
+.amend-2{
+    border: 2px solid purple;
+    height: 150px;
+    margin-right:250px;
+    margin-left: 250px;
+    background-color: #E2C6FF;
+    padding: 30px;
+}
+
+.amend-3{
+    border: 2px solid purple;
+    height: 400px;
+    margin-right:250px;
+    margin-left: 250px;
+    background-color: #E2C6FF;
+    padding: 30px;
+}
+
+
+.amend-4{
+    border: 2px solid purple;
+    height: 400px;
+    margin-right:250px;
+    margin-left: 250px;
+    background-color: #E2C6FF;
+    padding: 30px;
+
+}
+
+
+
+.amend-5{
+    border: 2px solid purple;
+    height: 450px;
+    margin-right:250px;
+    margin-left: 250px;
+    background-color: #E2C6FF;
+    padding: 30px;
+}
+
+
+
+.amend-6{
+    border: 2px solid purple;
+    height: 200px;
+    margin-right:250px;
+    margin-left: 250px;
+    background-color: #E2C6FF;
+    padding: 30px;
+}
+.hero1{
+    background-image: url(../images/amendment-29-pc.jpg);
+    background-size: contain;
+}
+
+.howtohelpheading{
+    border: 2px solid purple;
+    height: 70px;
+    padding-left: 60px;
+    margin-right: 450px;
+    margin-left: 450px;
+    background-color:#E2C6FF;
+
+}
+.stories-heading2{
+    border: 2px solid purple;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 30%;
+    background-color:#E2C6FF;
+}
+.community{
+    border: 2px solid purple;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 30%;
+    background-color:#E2C6FF;
+}
+.legislators{ 
+    border: 2px solid purple;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 30%;
+    background-color:#E2C6FF;
+}
+.hero2{
+    background-image: url(../images/Homeless-Sitting.jpg);
+    background-size: cover;
+}
+.solution{
+    border: 2px solid purple;
+    height: 70px;
+    padding-left: 60px;
+    margin-right: 450px;
+    margin-left: 450px;
+    background-color:#E2C6FF
+
+
+}
+.spacing{
+    margin: 50px 0 ;
+    text-align: center;
+}
+
+.div-space {
+    margin-bottom: 10px;
+}
+.hero3{
+    background-image: url(../images/bennett-tobias-zCLPvnopq88-unsplash.jpg);
+    background-size: cover;
+}
+
+/*index page*/ 
+ .Each-year{
+    margin: 5%; 
+    border: 2px solid purple;
+    background-color:#E2C6FF;
+    padding: 10px;
+   height: fit-content;
+}
+
+.game-description {
+    margin: 5%; 
+    border: 2px solid purple;
+    background-color:#E2C6FF;
+    padding: 10px;
+    height: fit-content;
+
+}
+
+.scratch-game {
+    margin: 10%;
+}
+
+.answer-1 {
+    margin: 5%; 
+    border: 2px solid purple;
+    background-color:#E2C6FF;
+    padding: 10px;
+    height: fit-content;
+}
+.answer-2{
+    margin: 5%; 
+    border: 2px solid purple;
+    background-color:#E2C6FF;
+    padding: 10px;
+    height: fit-content;
+}
+
+.causes{ 
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid purple;
+    background-color:#E2C6FF;
+    padding: 10px;
+    height: fit-content;
+    font-size: 25px;
+    text-align: center;
+}
+.nomad{
+    border: 2px solid purple ;
+    height: 300px;
+    background-color: #E2C6FF;
+    padding: 30px;
+    margin-right: 10px;
+}
+.help1{
+    border: 2px solid purple;
+    height: 200px;
+    padding-left: 60px;
+    margin-right: 150px;
+    margin-left: 225px;
+    background-color:#E2C6FF;
+    margin-bottom: 50px;
+}
+.help2{
+    border: 2px solid purple;
+    height: 500px;
+    padding-left: 60px;
+    margin-right: 150px;
+    margin-left: 225px;
+    background-color:#E2C6FF;
+    margin-bottom: 50px;
+}
+.help3{
+    border: 2px solid purple;
+    height: 90px;
+    padding-left: 60px;
+    margin-right: 150px;
+    margin-left: 225px;
+    background-color:#E2C6FF;
+    margin-bottom: 50px;
+}
+.help4{
+    margin: 5%; 
+    border: 2px solid purple;
+    background-color:#E2C6FF;
+    padding: 10px;
+    height: fit-content;
+}
+.nomad{
+    border: 2px solid purple;
+    height: 350px;
+    padding-left: 60px;
+    margin-right: 150px;
+    margin-left: 225px;
+    background-color:#E2C6FF;
+    margin-bottom: 50px;
+}
+   
+ 
+ 
+
+
+   
+    
+
+
+
+
+
+   
+  
+
+
+
+.game-description{
+    margin-bottom: 5%;
+  
+   
+}
